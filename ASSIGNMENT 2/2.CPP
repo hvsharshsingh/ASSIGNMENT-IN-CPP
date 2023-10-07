@@ -1,8 +1,6 @@
 #include <iostream>
 #include <cmath>
 using namespace std;
-
-// Function to check if a number is prime
 bool isPrime(int number) {
     if (number <= 1) {
         return false;
@@ -14,29 +12,20 @@ bool isPrime(int number) {
     }
     return true;
 }
-
-// Function to print prime numbers within a range
-void printPrimesInRange(int start, int end) {
-    cout << "Prime numbers between " << start << " and " << end << " are: ";
+void printRange(int start, int end) {
+    int temp = 0;
     for (int i = start; i <= end; i++) {
-        if (isPrime(i)) {
-            cout << i << " ";
-        }
+        if (isPrime(i))
+        temp = temp + i;
     }
-    cout << endl;
+    cout<<"Sume of range of numbers is : "<<temp;
 }
-
 int main() {
     int start, end;
-
-    // Taking input from the user
     cout << "Enter the starting number: ";
     cin >> start;
     cout << "Enter the ending number: ";
     cin >> end;
-
-    // Printing prime numbers within the range
-    printPrimesInRange(start, end);
-
+    printRange(start, end);
     return 0;
 }
