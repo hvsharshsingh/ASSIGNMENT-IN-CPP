@@ -7,7 +7,7 @@ class greatest
     public:
         void input()
         {
-                cout<<"Enter 3 nos.";
+                cout<<"Enter 3 number : ";
                 cin>>x>>y>>z;
         }
         void calc()

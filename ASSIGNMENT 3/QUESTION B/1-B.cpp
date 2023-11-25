@@ -1,4 +1,3 @@
-//print talbe of  N number....
 #include <iostream>
 using namespace std;
 class TABLE {
