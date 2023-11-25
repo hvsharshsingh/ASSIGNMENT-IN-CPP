@@ -22,5 +22,4 @@ int main()
         greatest g;
         g.input();
         g.calc();
-        
 }
